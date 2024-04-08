@@ -2,9 +2,40 @@
 title Telecommande d'appareils
 
 '''classes
-class Telecommande{
+class Telecommande {
     + Telecommande()
-    + ajouterAppareil()
+    + ajouterAppareil(Appareil a)
+    + activerAppareil(int indiceAppareil)
+    + desactiverAppareil(int indiceAppareil)
+    + activerTout()
+    + toString():String
 }
+
+class Appareil {
+    + allumer()
+    + eteindre()
+    + toString():String
+}
+
+class Hifi {
+    - son : int
+    + allumer()
+    + eteindre()
+    + toString():String
+}
+
+class Lampe {
+    - nom : String
+    - allume : boolean
+    + Lampe(String nom)
+    + allumer()
+    + eteindre()
+    + toString():String
+}
+
+'''relations
+Telecommande "1" --> "*" Appareil : - appareils : List<>
+Appareil <|.. Hifi
+Appareil <|.. Lampe
 
 @enduml
