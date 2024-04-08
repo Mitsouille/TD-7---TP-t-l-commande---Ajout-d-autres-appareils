@@ -1,0 +1,10 @@
+@startuml
+title Telecommande d'appareils
+
+'''classes
+class Telecommande{
+    + Telecommande()
+    + ajouterAppareil()
+}
+
+@enduml
