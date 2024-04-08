@@ -37,7 +37,7 @@ public class Telecommande {
     public void activerTout() {
         for (Lampe l : this.lampes)
             l.allumer();
-        for (Chaine h : this.chaines)
+        for (Hifi h : this.chaines)
             h.allumer();
     }
 
