@@ -5,7 +5,7 @@ public class Telecommande {
     private List<Lampe> lampes;
 
     public Telecommande() {
-        this.lampes=new ArrayList<Lampe>();
+        this.lampes = new ArrayList<Lampe>();
     }
 
     public void ajouterLampe(Lampe l) {
@@ -21,7 +21,7 @@ public class Telecommande {
     }
 
     public void activerTout() {
-        for(Lampe l : this.lampes)
+        for (Lampe l : this.lampes)
             l.allumer();
     }
 
