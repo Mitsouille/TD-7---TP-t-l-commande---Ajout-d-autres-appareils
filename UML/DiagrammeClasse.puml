@@ -11,7 +11,7 @@ class Telecommande {
     + toString():String
 }
 
-class Appareil {
+Interface Appareil {
     + allumer()
     + eteindre()
 }
