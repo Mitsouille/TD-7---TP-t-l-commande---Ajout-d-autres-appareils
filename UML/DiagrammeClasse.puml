@@ -32,9 +32,17 @@ class Lampe {
     + toString():String
 }
 
+class Television {
+    - son : int
+    + allumer()
+    + eteindre()
+    + toString():String
+}
+
 '''relations
 Telecommande "1" --> "*" Appareil : - appareils : List<>
 Appareil <|.. Hifi
 Appareil <|.. Lampe
+Appareil <|.. Television
 
 @enduml

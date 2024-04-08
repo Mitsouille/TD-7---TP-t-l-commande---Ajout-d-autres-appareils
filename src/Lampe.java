@@ -10,16 +10,18 @@ public class Lampe implements Appareil {
         this.allume = false;
     }
 
+    @Override
     public void allumer() {
         this.allume = true;
     }
 
+    @Override
     public void eteindre() {
         this.allume = false;
     }
 
     public String toString() {
-        return "Nom : " + this.nom + " etat : " + this.allume;
+        return "Lampe : " + this.nom + " etat : " + this.allume;
     }
 
 }

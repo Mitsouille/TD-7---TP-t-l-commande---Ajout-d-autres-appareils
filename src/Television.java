@@ -1,5 +1,6 @@
-public class Hifi implements Appareil {
-    int son = 0;
+public class Television implements Appareil {
+
+    private int son = 0;
 
     @Override
     public void allumer() {
@@ -17,7 +18,7 @@ public class Hifi implements Appareil {
 
     public String toString() {
         String str = "";
-        str += "Hifi : " + son;
+        str += "Television : " + son;
         return str;
     }
 }
