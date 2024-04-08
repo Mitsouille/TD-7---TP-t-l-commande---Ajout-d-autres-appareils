@@ -1,4 +1,4 @@
-public class Hifi {
+public class Hifi implements Appareil {
     int son = 0;
 
     public void allumer() {
